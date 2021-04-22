@@ -1,4 +1,4 @@
-class FallingFeather extends Looper implements Mover{
+class FallingFeather extends Looper implements Mover {
   float x;
   float y;
   float xSpeed;
