@@ -10,7 +10,10 @@ abstract class Bird extends Looper implements Mover {
     this.fillColor = color(random(0,255), random(0,255), random(0,255));
   }
   
-  abstract void move();
+  void move(){
+    this.x += this.xSpeed;
+    this.x = super.loop(this.x, width, this.size);
+  }
   void display() {
     fill(this.fillColor);
     ellipse(this.x, this.y, this.size*2, this.size);
