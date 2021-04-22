@@ -1,4 +1,4 @@
-class FlittingBird extends Bird implements Mover {
+class FlittingBird extends Bird {
   float minXSpeed = 2.0;
   float maxXSpeed = 5.0;
   float ySpeed;

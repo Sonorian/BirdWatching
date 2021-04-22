@@ -1,4 +1,4 @@
-abstract class Looper extends DisplayObject {
+abstract class Looper extends DisplayObject implements Mover{
   float loop(float position, int dimension, float size) {
     if (position > dimension) {
       return -size;
@@ -6,6 +6,9 @@ abstract class Looper extends DisplayObject {
       return position;
     }
   }
+  
+  abstract void move();
+  abstract void display();
   /*
   //alternate way of doing things
   float loopX(float x, float size) {
