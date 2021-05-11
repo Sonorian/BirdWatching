@@ -1,5 +1,6 @@
 abstract class Looper extends DisplayObject implements Mover{
-  float loop(float position, int dimension, float size) {
+  //*
+  protected float loop(float position, int dimension, float size) {
     if (position > dimension) {
       return -size;
     } else {
@@ -9,7 +10,7 @@ abstract class Looper extends DisplayObject implements Mover{
   
   abstract void move();
   abstract void display();
-  /*
+  /*/
   //alternate way of doing things
   float loopX(float x, float size) {
     if (x > width) {
@@ -26,5 +27,5 @@ abstract class Looper extends DisplayObject implements Mover{
       return y;
     }
   }
-  */
+  //*/
 }

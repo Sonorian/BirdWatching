@@ -3,7 +3,7 @@ class FallingFeather extends Looper {
   float y;
   float xSpeed;
   float ySpeed;
-  float size = 5.0;
+  final float size = 5.0;
 
   FallingFeather() {
     this.x = random(0, width);

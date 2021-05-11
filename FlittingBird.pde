@@ -1,7 +1,7 @@
 class FlittingBird extends Bird {
   float ySpeed;
-  float minYSpeed = -1.0;
-  float maxYSpeed = 1.0;
+  final float minYSpeed = -1.0;
+  final float maxYSpeed = 1.0;
   final static float minXSpeed = 2.0;
   final static float maxXSpeed = 5.0;
   final static float size = 15.0;
