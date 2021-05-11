@@ -27,10 +27,6 @@ void draw() {
   for(int i=0; i<size; i++) {
     Mover object = objects.get(i);
     object.move();
-    objects.set(i, object);
-  }
-  for(int i=0; i<size; i++) {
-    Mover object = objects.get(i);
     object.display();
     objects.set(i, object);
   }
