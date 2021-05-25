@@ -1,17 +1,17 @@
 class FlittingBird extends Bird {
-  float ySpeed;
-  float minYSpeed = -1.0;
-  float maxYSpeed = 1.0;
-  final static float minXSpeed = 2.0;
-  final static float maxXSpeed = 5.0;
-  final static float size = 15.0;
+  private float ySpeed;
+  private final float minYSpeed = -1.0;
+  private final float maxYSpeed = 1.0;
+  private final static float minXSpeed = 2.0;
+  private final static float maxXSpeed = 5.0;
+  private final static float size = 15.0;
 
   FlittingBird() {
     super(FlittingBird.minXSpeed, FlittingBird.maxXSpeed);
     this.ySpeed = random(minYSpeed, maxYSpeed);
   }
   
-  void move() {
+  public final void move() {
     super.move();
     this.y += this.ySpeed;
     // if off the top or bottom of the screen, reverse y speed
@@ -31,7 +31,7 @@ class FlittingBird extends Bird {
     }
   }
   
-  void display() {
+  public final void display() {
     super.display(FlittingBird.size);
   }
 }

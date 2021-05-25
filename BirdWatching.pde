@@ -1,6 +1,6 @@
-ArrayList<Mover> objects;
+public ArrayList<Mover> objects;
 
-void setup() {
+public final void setup() {
   noStroke();
   size(600, 400);
   
@@ -20,17 +20,13 @@ void setup() {
   }
 }
 
-void draw() {
+public final void draw() {
   background(173,216,230);
   
   int size = objects.size();
   for(int i=0; i<size; i++) {
     Mover object = objects.get(i);
     object.move();
-    objects.set(i, object);
-  }
-  for(int i=0; i<size; i++) {
-    Mover object = objects.get(i);
     object.display();
     objects.set(i, object);
   }

@@ -1,13 +1,12 @@
 abstract class DisplayObject {
-  float x;
-  float y;
-  float size;
-  color fillColor;
+  protected float x;
+  protected float y;
+  protected float size;
+  protected final color fillColor;
   
   DisplayObject() {
     this.fillColor = color(random(0,255), random(0,255), random(0,255));
   }
   
-  abstract void move();
   abstract void display();
 }

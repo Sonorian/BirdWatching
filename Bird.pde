@@ -1,7 +1,7 @@
 abstract class Bird extends Looper {
-  float xSpeed;
-  float minXSpeed;
-  float maxXSpeed;
+  protected float xSpeed;
+  protected float minXSpeed;
+  protected float maxXSpeed;
   
   Bird(float _minXSpeed, float _maxXSpeed) {
     this.x = random(0, width);
@@ -9,13 +9,12 @@ abstract class Bird extends Looper {
     this.xSpeed = random(_minXSpeed, _maxXSpeed);
   }
   
-  void move(){
+  public void move(){
     this.x += this.xSpeed;
     this.x = super.loop(this.x, width, this.size);
-    //System.out.println(this.x);
   }
   
-  void display(float _size) {
+  public void display(float _size) {
     fill(this.fillColor);
     ellipse(this.x, this.y, _size*2, _size);
   }
