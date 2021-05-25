@@ -1,9 +1,9 @@
 class FallingFeather extends Looper {
-  float x;
-  float y;
-  float xSpeed;
-  float ySpeed;
-  final float size = 5.0;
+  private float x;
+  private float y;
+  private float xSpeed;
+  private final float ySpeed;
+  private final float size = 5.0;
 
   FallingFeather() {
     this.x = random(0, width);
@@ -12,12 +12,12 @@ class FallingFeather extends Looper {
     this.ySpeed = random(0.5, 1.5);
   }
   
-  void display() {
+  public final void display() {
     fill(this.fillColor);
     rect(this.x, this.y, this.size*2, this.size);
   }
   
-  void move() {
+  public final void move() {
     this.x += this.xSpeed;
     this.y += this.ySpeed;
     // if off the bottom of the screen, move to the top

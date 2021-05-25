@@ -1,7 +1,7 @@
 abstract class Bird extends Looper {
-  float xSpeed;
-  float minXSpeed;
-  float maxXSpeed;
+  protected float xSpeed;
+  protected float minXSpeed;
+  protected float maxXSpeed;
   
   Bird(float _minXSpeed, float _maxXSpeed) {
     this.x = random(0, width);

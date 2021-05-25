@@ -7,7 +7,7 @@ class SoaringBird extends Bird {
     super(SoaringBird.minXSpeed, SoaringBird.maxXSpeed);
   }
 
-  void display() {
+  public final void display() {
     super.display(SoaringBird.size);
   }
 }

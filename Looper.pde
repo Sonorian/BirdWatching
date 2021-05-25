@@ -1,6 +1,6 @@
 abstract class Looper extends DisplayObject implements Mover{
   //*
-  protected float loop(float position, int dimension, float size) {
+  protected final float loop(float position, int dimension, float size) {
     if (position > dimension) {
       return -size;
     } else {
